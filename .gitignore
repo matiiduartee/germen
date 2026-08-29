@@ -1,0 +1,7 @@
+node_modules/
+.env
+.env.local
+
+# Salida del sync: se regenera con `npm run sync`
+data/catalogo.json
+data/imagenes/

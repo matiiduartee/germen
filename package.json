@@ -1,0 +1,13 @@
+{
+  "name": "germen",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "App de tablet para atender clientes en el local de Germinando Nativas, sincronizada con Wix",
+  "scripts": {
+    "sync": "node scripts/sync-catalogo.mjs",
+    "sync:imagenes": "node scripts/sync-catalogo.mjs --imagenes",
+    "test": "node --test 'scripts/**/*.prueba.mjs'"
+  },
+  "engines": { "node": ">=22" }
+}
