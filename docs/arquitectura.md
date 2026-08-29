@@ -99,61 +99,88 @@ y más robusto que un diff incremental.
 
 ## Cómo se crea el pedido en Wix
 
-Hay dos caminos, y **conviene el segundo**:
+Hay dos caminos. **Se implementó el segundo**, y estos son los motivos.
 
 ### Camino directo — `POST /ecom/v1/orders` (Create Order)
 
-Existe y está pensado justamente para esto ("orders from external systems, such as POS").
-Pero tiene dos problemas serios para un punto de venta:
+Existe y está pensado justamente para esto ("orders from external systems, such
+as POS"). Pero tiene dos problemas serios para un punto de venta:
 
-1. **Límite de 5 llamadas por hora por sitio** para apps no publicadas en el Wix App Market.
-   Con identidad de API key (admin) el límite *no debería* aplicar, porque no es una app
-   — pero eso hay que **verificarlo empíricamente antes de construir encima**. Es el
-   primer spike del proyecto.
-2. Obliga a calcular a mano totales, impuestos y envío. Cada línea debe traer
-   `taxDetails` o `taxInfo`. Replicar la aritmética fiscal en ARS del lado de la tablet
-   es una fuente de errores permanente.
+1. **Límite de 5 llamadas por hora por sitio** para apps no publicadas en el
+   Wix App Market. Con identidad de API key o desde Velo el límite *no debería*
+   aplicar, porque no es una app — pero eso hay que **verificarlo** antes de
+   construir encima.
+2. Obliga a calcular a mano totales, impuestos y envío: cada línea debe traer
+   `taxDetails` o `taxInfo`. Replicar la aritmética fiscal en ARS del lado de la
+   tablet es una fuente de errores permanente.
 
-### Camino recomendado — Draft Orders
+### Camino elegido — Draft Orders
 
 ```
-POST /ecom/v1/draft-orders                          → crea el borrador
-  body: { draftOrder: { catalogLineItems: [
-    { catalogReference: { catalogItemId, appId }, quantity } ] } }
-
-POST /ecom/v1/draft-orders/{id}/create-order        → lo convierte en pedido real
-  body: { channelInfo: { type: "..." }, createSettings: { notifications: {...} } }
+POST /ecom/v1/draft-orders                    → crea el borrador
+POST /ecom/v1/draft-orders/{id}/create-order  → lo convierte en pedido real
+POST /ecom/v1/payments/orders/{id}/add-payment → registra el cobro
 ```
 
 Ventajas concretas:
 
-- **Wix calcula precios, impuestos y envío.** La respuesta es un `calculatedDraftOrder`
-  con `shippingOptions` y `calculationErrors`. La tablet no hace aritmética fiscal.
-- El `appId` de Wix Stores es `215238eb-22a5-4c36-9e7b-e7c08025e04e` — coincide con la
-  app instalada en el sitio, así que las líneas quedan enlazadas al catálogo real
-  (no como texto suelto), y el stock se descuenta solo.
-- Se puede editar el borrador antes de confirmar (agregar líneas, descuentos, envío),
-  que es exactamente el flujo de mostrador: el cliente cambia de opinión antes de pagar.
+- **Wix calcula precios, impuestos y envío.** La respuesta es un
+  `calculatedDraftOrder` con `priceSummary`, `shippingOptions` y
+  `calculationErrors`. La tablet no hace aritmética fiscal.
+- Se puede editar el borrador antes de confirmar, que es exactamente el flujo
+  de mostrador: el cliente cambia de opinión antes de pagar.
 - No tiene el límite de 5/hora documentado.
 
-En ambos casos, `channelInfo.type` debe reflejar el origen real de la venta.
+### Detalles confirmados contra la documentación
+
+- El `appId` de Wix Stores es siempre `215238eb-22a5-4c36-9e7b-e7c08025e04e`.
+  Coincide con la app instalada en el sitio.
+- Como toda la tienda tiene `manageVariants: true`, la variante se referencia
+  con `catalogReference.options.variantId`. (Si fuera `false`, iría
+  `options.options: { "Tamaño": "…" }` — no es el caso acá.)
+- `channelInfo.type: "POS"` es un valor válido del enum, definido por Wix como
+  "point of sale solutions". Deja los pedidos del mostrador distinguibles de los
+  de la web.
+- El cobro por fuera de Wix se registra con
+  `regularPaymentDetails.offlinePayment: true` más el medio como
+  `paymentMethod`. Add Payments **no cobra nada**: sólo deja el registro.
+- Los borradores aceptan `buyerInfo`, así que el email del cliente viaja desde
+  el borrador y no hace falta un paso aparte.
+
+### El proxy
+
+Se implementó como **función HTTP de Velo** (`proxy/velo/http-functions.js`),
+no con API key. Velo ya está habilitado en el sitio, y desde el backend se puede
+usar `elevate()` para las dos llamadas que necesitan permisos de administrador.
+**Así no hay ninguna clave de Wix en ningún lado.**
+
+La documentación de Wix advierte que las funciones HTTP son "particularmente
+vulnerables por su naturaleza abierta", así que el endpoint valida un secreto
+por dispositivo antes de hacer nada.
+
+Contra duplicados: la tablet genera un `id` por envío y el proxy lo registra en
+una colección del CMS. Un reintento después de un corte de red devuelve el
+pedido anterior en vez de crear uno nuevo y descontar el stock dos veces.
 
 ## Riesgos identificados
 
 | Riesgo | Impacto | Mitigación |
 |---|---|---|
-| Límite de 5 pedidos/hora | Bloquea el uso real | Spike de verificación con API key **antes** de construir. Camino Draft Orders como plan principal |
-| API key en el dispositivo | Compromiso total de la cuenta | Proxy obligatorio, secreto por dispositivo, revocable |
+| Límite de 5 pedidos/hora | Bloquea el uso real | Resuelto por diseño: se usa Draft Orders, que no lo documenta. Igual hay que confirmarlo con una venta de prueba |
+| API key en el dispositivo | Compromiso total de la cuenta | Resuelto: el proxy corre en Velo con `elevate()`, no hay ninguna clave |
 | Stock por variante | Vender lo que no hay | Sincronizar `variants[].stock`, no el stock del producto |
 | Catálogo desactualizado | Precio viejo en mostrador | Sync al abrir + banner con antigüedad del catálogo |
 | Sin internet al cobrar | Pedido perdido | Cola local persistente con reintento e idempotencia |
 
 ## Estado del stock hoy
 
-En el relevamiento, la mayoría de los productos figura con `quantity: 0` o negativo
-(`-1`, `-3`) y `inStock: false`, pero `visible: true`. Algunos sí tienen stock real
-(Bio-neem 10, Arvejilla 20, Suspiros 2). Hay que definir si la tablet muestra stock,
-lo ignora, o bloquea la venta — ver decisiones pendientes.
+De los 162 productos, **55 tienen stock y 107 no**; 12 de esos están en negativo
+(vendidos de más). Los que más stock tienen son Flor de seda (50), Petunia blanca
+(28) y Cola de venado (25).
+
+La decisión fue bloquear la venta de lo que no hay, pero **sin esconderlo del
+catálogo** — si no, la tablet mostraría un tercio de la tienda. Ver
+[decisiones.md](decisiones.md).
 
 ## Fuentes
 

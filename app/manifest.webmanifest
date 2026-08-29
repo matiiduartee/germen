@@ -1,0 +1,15 @@
+{
+  "name": "Germinando Nativas — Mostrador",
+  "short_name": "Mostrador",
+  "description": "Catálogo y toma de pedidos para atender en el local",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#fbfaf6",
+  "theme_color": "#7d8c53",
+  "lang": "es-AR",
+  "icons": [
+    { "src": "icono.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

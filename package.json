@@ -7,7 +7,10 @@
   "scripts": {
     "sync": "node scripts/sync-catalogo.mjs",
     "sync:imagenes": "node scripts/sync-catalogo.mjs --imagenes",
-    "test": "node --test 'scripts/**/*.prueba.mjs'"
+    "test": "node --test 'scripts/**/*.prueba.mjs'",
+    "prueba:navegador": "node pruebas/navegador.mjs"
   },
-  "engines": { "node": ">=22" }
+  "engines": {
+    "node": ">=22"
+  }
 }

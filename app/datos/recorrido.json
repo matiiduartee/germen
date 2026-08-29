@@ -1,0 +1,46 @@
+{
+  "_nota": "El recorrido guiado del mostrador. Es data, no código: se puede reordenar, reescribir o agregar pasos sin tocar la app. Los IDs son colecciones reales de la tienda. Primera versión, armada a partir de las colecciones Quiz* del sitio y de los campos del formulario 'Identificación espacio' (cuanto_sol_tenes, donde_irian_las_plantas). Ajustar los textos para que suenen a las preguntas que hacés en persona.",
+  "pasos": [
+    {
+      "id": "luz",
+      "pregunta": "¿Dónde va a vivir la planta?",
+      "ayuda": "Lo primero que conviene saber: cuánto sol le llega.",
+      "multiple": false,
+      "opciones": [
+        { "etiqueta": "Al sol casi todo el día", "detalle": "Patio, terraza o balcón despejado", "icono": "☀️", "colecciones": ["787c59ec-fb9b-8c59-a5b8-0f5e6c7cc359"] },
+        { "etiqueta": "Sombra o pocas horas de sol", "detalle": "Bajo un árbol, galería, balcón al sur", "icono": "⛅", "colecciones": ["41a3737a-8093-77d6-3d35-8adeb7265c42"] },
+        { "etiqueta": "Adentro, cerca de una ventana", "detalle": "Living, oficina, ambiente cerrado", "icono": "🪟", "colecciones": ["adbfc3aa-612e-5e48-6119-c004ca56f95c"] }
+      ]
+    },
+    {
+      "id": "tipo",
+      "pregunta": "¿Qué estás buscando?",
+      "ayuda": "El porte de la planta define casi todo lo demás.",
+      "multiple": false,
+      "opciones": [
+        { "etiqueta": "Un árbol", "detalle": "Sombra y altura, a largo plazo", "icono": "🌳", "colecciones": ["059eb0da-3842-4a5d-83fd-62e59bee86db"] },
+        { "etiqueta": "Un arbusto", "detalle": "Volumen medio, estructura del cantero", "icono": "🌿", "colecciones": ["d4df5d7f-9a20-09ad-ee68-5da41f775a13"] },
+        { "etiqueta": "Herbáceas con flor", "detalle": "Color y floración de temporada", "icono": "🌸", "colecciones": ["0de2f9ad-10f0-6b42-327e-21d5f22e5f33"] },
+        { "etiqueta": "Gramíneas", "detalle": "Movimiento y textura de pastizal", "icono": "🌾", "colecciones": ["0c8fc228-3621-b161-885e-011a43f49781"] },
+        { "etiqueta": "Una enredadera", "detalle": "Para cubrir reja, pérgola o medianera", "icono": "🍃", "colecciones": ["8235b92f-90eb-8225-7ca3-e6eafdbbcb14"] },
+        { "etiqueta": "Cubresuelos", "detalle": "Para tapar el piso del cantero", "icono": "🌱", "colecciones": ["96f72238-1ba4-cd4b-3368-d3b1fffbff78"] },
+        { "etiqueta": "Cactus y suculentas", "detalle": "Casi sin riego", "icono": "🌵", "colecciones": ["8d2c9fe4-6c05-1267-9548-979291072a1a"] },
+        { "etiqueta": "Plantas de agua", "detalle": "Bordes de estanque, zonas que se inundan", "icono": "💧", "colecciones": ["e82cfb5b-e105-d76c-c79c-5bb7de226d19"] }
+      ]
+    },
+    {
+      "id": "objetivo",
+      "pregunta": "¿Buscabas algo en particular?",
+      "ayuda": "Este paso se puede saltear.",
+      "multiple": true,
+      "opcional": true,
+      "opciones": [
+        { "etiqueta": "Atraer mariposas", "icono": "🦋", "colecciones": ["a0466635-c4ec-53d1-ed64-c497668286cd"] },
+        { "etiqueta": "Atraer picaflores", "icono": "🐦", "colecciones": ["485d3470-b987-aa9f-ad4b-f6e97a88337e"] },
+        { "etiqueta": "Armar un cerco vivo", "icono": "🌲", "colecciones": ["cca5b136-54a5-ef09-cf26-227c23fd2db2"] },
+        { "etiqueta": "Aromáticas y medicinales", "icono": "🌱", "colecciones": ["538823dc-017a-d8ff-516c-134f16251497"] },
+        { "etiqueta": "Que necesite poco riego", "icono": "🏜️", "colecciones": ["05776fc0-796a-7306-2480-2a29376a63d3"] }
+      ]
+    }
+  ]
+}

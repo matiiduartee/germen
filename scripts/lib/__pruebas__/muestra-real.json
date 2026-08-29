@@ -1,0 +1,295 @@
+{
+  "_nota": "Recorte fiel de /stores-reader/v1/products/query y /collections/query del sitio Germinando Nativas (7f752b63-1b75-465e-8382-43aae9432de0). Sirve como semilla para desarrollar sin credenciales y como fixture de pruebas. Los 8 productos cubren los tres casos de stock que existen hoy en la tienda.",
+  "collections": [
+    { "id": "00000000-000000-000000-000000000001", "name": "All Products" },
+    { "id": "17583204-6b25-b3d9-bb4a-6b5c2a810352", "name": "Arbustos" },
+    { "id": "538823dc-017a-d8ff-516c-134f16251497", "name": "Aromáticas y medicinales" },
+    { "id": "05776fc0-796a-7306-2480-2a29376a63d3", "name": "Bajo riego" },
+    { "id": "5ac6d6fa-ffa7-e4b8-6cad-58b6b80b8fba", "name": "Cactus y suculentas" },
+    { "id": "cca5b136-54a5-ef09-cf26-227c23fd2db2", "name": "Cerco vivo" },
+    { "id": "b822a1a5-06f0-1d1c-8cef-07146670d6a6", "name": "Colección \"Delta\"" },
+    { "id": "592137bf-6796-940c-5094-b5a9652eaa60", "name": "Colección primavera" },
+    { "id": "adbfc3aa-612e-5e48-6119-c004ca56f95c", "name": "De interior" },
+    { "id": "86f49bd2-b1f3-46a6-5e91-ad6a400c9d8f", "name": "Enredaderas y trepadoras" },
+    { "id": "6fbbde8a-917d-f1cc-1e9d-e24a2f56d148", "name": "Florales" },
+    { "id": "0b08511f-e00e-e438-ffcd-455138235dff", "name": "Gramíneas" },
+    { "id": "1196e946-d449-c21c-b95e-0ab99dcbd5e5", "name": "Herbáceas" },
+    { "id": "056741a1-50fd-a9df-fd1d-05dfc9894197", "name": "Insumos y herramientas" },
+    { "id": "da1f4d1f-d3ae-1df0-89c9-e701e30c3297", "name": "Macetas de barro" },
+    { "id": "916fc44c-4a17-e989-db9f-940b6b947b44", "name": "Macetas plásticas" },
+    { "id": "41a3737a-8093-77d6-3d35-8adeb7265c42", "name": "Media sombra" },
+    { "id": "7c47aa59-5991-eb07-e436-b1b735406bc8", "name": "Módulos listos para plantar" },
+    { "id": "f6a38887-6e4c-204e-ae64-2865abfda985", "name": "Plantas de hoja" },
+    { "id": "a0466635-c4ec-53d1-ed64-c497668286cd", "name": "Plantas para mariposas" },
+    { "id": "485d3470-b987-aa9f-ad4b-f6e97a88337e", "name": "Plantas para picaflores" },
+    { "id": "e82cfb5b-e105-d76c-c79c-5bb7de226d19", "name": "Quiz Acuatica" },
+    { "id": "059eb0da-3842-4a5d-83fd-62e59bee86db", "name": "Quiz Arbol" },
+    { "id": "d4df5d7f-9a20-09ad-ee68-5da41f775a13", "name": "Quiz Arbusto" },
+    { "id": "8d2c9fe4-6c05-1267-9548-979291072a1a", "name": "Quiz Cactus" },
+    { "id": "8235b92f-90eb-8225-7ca3-e6eafdbbcb14", "name": "Quiz Enredadera" },
+    { "id": "0c8fc228-3621-b161-885e-011a43f49781", "name": "Quiz Graminea" },
+    { "id": "0de2f9ad-10f0-6b42-327e-21d5f22e5f33", "name": "Quiz Herbacea" },
+    { "id": "96f72238-1ba4-cd4b-3368-d3b1fffbff78", "name": "Quiz Rastrera" },
+    { "id": "8e1c890d-b6f4-240c-0a02-9a6dfca8f3d1", "name": "Rastreras y cubresuelos" },
+    { "id": "787c59ec-fb9b-8c59-a5b8-0f5e6c7cc359", "name": "Sol pleno" },
+    { "id": "4d70c974-3720-d020-3e58-5fe36455ef1f", "name": "Tierras y sustratos" },
+    { "id": "e73855de-a2f6-96c5-875c-7ae113d296b6", "name": "Todos los productos" },
+    { "id": "0596dce9-96b6-b8e6-a095-5b01a4083da5", "name": "Árboles" }
+  ],
+  "products": [
+    {
+      "id": "04ce80f1-aa0a-87fc-ccf4-dc212aa861ce",
+      "name": "Acacia café (Sesbania virgata)",
+      "slug": "acacia-café-sesbania-virgata",
+      "visible": true, "productType": "physical", "brand": "Germinando Nativas",
+      "description": "<p>☀️ Sol: pleno</p><p>💧 Riego: medio</p><p>📏 Tamaño: alcanza entre 1,8 a 3 metros</p><p>🌸 Época de floración: primavera y verano</p><p>🦋 Fauna: mariposa Colias lesbia y aves de bañado</p>",
+      "additionalInfoSections": [
+        { "title": "🦋 Beneficios y usos en el paisaje", "description": "<p>La <strong>Acacia café</strong> es un arbusto o arbolito de rápido crecimiento, nativo de riberas, bañados y suelos anegadizos del litoral argentino. Se cubre de flores amarillas en primavera y verano. Al ser una leguminosa fija nitrógeno en el suelo. Es planta hospedera de la mariposa <strong>Colias lesbia</strong>.</p>" },
+        { "title": "📦 ¿Qué recibís con tu compra?", "description": "<p>Vas a recibir una planta viva, sana y bien enraizada. El tamaño exacto dependerá de la capacidad de maceta que elijas.</p>" }
+      ],
+      "stock": { "trackInventory": true, "quantity": 0, "inStock": false, "inventoryStatus": "OUT_OF_STOCK" },
+      "price": { "currency": "ARS", "price": 36000, "discountedPrice": 36000 },
+      "priceRange": { "minValue": 36000, "maxValue": 36000 },
+      "manageVariants": true,
+      "productOptions": [
+        { "optionType": "drop_down", "name": "Maceta", "choices": [{ "value": "Plástica de vivero", "inStock": false, "visible": true }] },
+        { "optionType": "drop_down", "name": "Tamaño", "choices": [{ "value": "Entre 100 y 130 cm.", "inStock": false, "visible": true }] }
+      ],
+      "variants": [
+        { "id": "f6c19d63-77a9-4bdd-843f-431e8e532738", "choices": { "Maceta": "Plástica de vivero", "Tamaño": "Entre 100 y 130 cm." },
+          "variant": { "priceData": { "currency": "ARS", "price": 36000, "discountedPrice": 36000 }, "sku": "SES-VIR-10L", "visible": true },
+          "stock": { "trackQuantity": true, "quantity": 0, "inStock": false } }
+      ],
+      "media": { "items": [{ "mediaType": "image", "id": "9377b6_ddd42a94eb414545904463f541358904~mv2.jpg",
+        "image": { "url": "https://static.wixstatic.com/media/9377b6_ddd42a94eb414545904463f541358904~mv2.jpg/v1/fit/w_1024,h_683,q_90/file.jpg", "width": 1024, "height": 683 } }] },
+      "productPageUrl": { "base": "https://www.germinandonativas.com/", "path": "/product-page/acacia-café-sesbania-virgata" },
+      "collectionIds": ["787c59ec-fb9b-8c59-a5b8-0f5e6c7cc359", "e73855de-a2f6-96c5-875c-7ae113d296b6", "17583204-6b25-b3d9-bb4a-6b5c2a810352", "0596dce9-96b6-b8e6-a095-5b01a4083da5", "059eb0da-3842-4a5d-83fd-62e59bee86db", "00000000-000000-000000-000000000001"],
+      "lastUpdated": "2026-08-27T19:40:43.074Z"
+    },
+    {
+      "id": "b6060042-d616-f89f-5485-6e413c5718bd",
+      "name": "Salvia azul (Salvia guaranitica)",
+      "slug": "salvia-azul-salvia-guaranitica",
+      "visible": true, "productType": "physical", "brand": "Germinando Nativas",
+      "description": "<p>☀️ Sol: pleno a media sombra</p><p>💧 Riego: medio</p><p>📏 Tamaño: alcanza entre 1 y 1,7 metros</p><p>🌸 Época de floración: primavera a otoño</p><p>🦋 Fauna: picaflores</p>",
+      "additionalInfoSections": [
+        { "title": "🦋 Beneficios y usos en el paisaje", "description": "<p>La <strong>Salvia azul</strong> es probablemente la planta <strong>más efectiva para traer picaflores</strong> a un balcón o jardín porteño. Sus flores tubulares están hechas a medida de su pico. Florece durante meses.</p>" },
+        { "title": "📦 ¿Qué recibís con tu compra?", "description": "<p>Vas a recibir una planta viva, sana y bien enraizada.</p>" }
+      ],
+      "stock": { "trackInventory": true, "quantity": 11, "inStock": true, "inventoryStatus": "PARTIALLY_OUT_OF_STOCK" },
+      "price": { "currency": "ARS", "price": 9000, "discountedPrice": 9000 },
+      "priceRange": { "minValue": 9000, "maxValue": 9500 },
+      "manageVariants": true,
+      "productOptions": [
+        { "optionType": "drop_down", "name": "Maceta", "choices": [{ "value": "Plástica de vivero", "inStock": true, "visible": true }] },
+        { "optionType": "drop_down", "name": "Tamaño", "choices": [
+          { "value": "Entre 30 y 40 cm.", "inStock": false, "visible": true },
+          { "value": "Entre 40 y 60 cm.", "inStock": true, "visible": true }] }
+      ],
+      "variants": [
+        { "id": "268da103-3503-4ba9-afcd-8f5e25106bfb", "choices": { "Maceta": "Plástica de vivero", "Tamaño": "Entre 30 y 40 cm." },
+          "variant": { "priceData": { "currency": "ARS", "price": 9500, "discountedPrice": 9500 }, "sku": "SAL-GUA-N14", "visible": true },
+          "stock": { "trackQuantity": true, "quantity": -2, "inStock": false } },
+        { "id": "d9aa61b7-b4cd-4bcc-b636-efd062b1b9e0", "choices": { "Maceta": "Plástica de vivero", "Tamaño": "Entre 40 y 60 cm." },
+          "variant": { "priceData": { "currency": "ARS", "price": 9000, "discountedPrice": 9000 }, "sku": "SAL-GUA-3L", "visible": true },
+          "stock": { "trackQuantity": true, "quantity": 13, "inStock": true } }
+      ],
+      "media": { "items": [{ "mediaType": "image", "id": "9377b6_f7259c72f1af45de94e2ecf000e887a1~mv2.jpg",
+        "image": { "url": "https://static.wixstatic.com/media/9377b6_f7259c72f1af45de94e2ecf000e887a1~mv2.jpg/v1/fit/w_3000,h_1664,q_90/file.jpg", "width": 3000, "height": 1664 } }] },
+      "productPageUrl": { "base": "https://www.germinandonativas.com/", "path": "/product-page/salvia-azul-salvia-guaranitica" },
+      "collectionIds": ["787c59ec-fb9b-8c59-a5b8-0f5e6c7cc359", "e73855de-a2f6-96c5-875c-7ae113d296b6", "6fbbde8a-917d-f1cc-1e9d-e24a2f56d148", "b822a1a5-06f0-1d1c-8cef-07146670d6a6", "17583204-6b25-b3d9-bb4a-6b5c2a810352", "d4df5d7f-9a20-09ad-ee68-5da41f775a13", "485d3470-b987-aa9f-ad4b-f6e97a88337e", "592137bf-6796-940c-5094-b5a9652eaa60", "00000000-000000-000000-000000000001"],
+      "lastUpdated": "2026-08-27T19:37:28.342Z"
+    },
+    {
+      "id": "d630bb8f-7434-9e6f-04e0-706058cacd71",
+      "name": "Mburucuyá (Passiflora caerulea)",
+      "slug": "mburucuyá-passiflora-caerulea",
+      "visible": true, "productType": "physical", "brand": "Germinando Nativas",
+      "description": "<p>☀️ Sol: pleno a media sombra</p><p>💧 Riego: bajo a medio</p><p>📏 Tamaño: trepa entre 2 y 10 metros</p><p>🌸 Época de floración: primavera y verano</p><p>🦋 Fauna: mariposas</p>",
+      "additionalInfoSections": [
+        { "title": "🦋 Beneficios y usos en el paisaje", "description": "<p>El <strong>Mburucuyá</strong> es una trepadora vigorosa que <strong>cubre rejas, pérgolas y medianeras en una sola temporada</strong>. Su flor, una de las más llamativas de la flora nativa, se abre de a una por día.</p>" },
+        { "title": "📦 ¿Qué recibís con tu compra?", "description": "<p>Vas a recibir una planta viva, sana y bien enraizada.</p>" }
+      ],
+      "stock": { "trackInventory": true, "quantity": 2, "inStock": true, "inventoryStatus": "IN_STOCK" },
+      "price": { "currency": "ARS", "price": 13000, "discountedPrice": 13000 },
+      "priceRange": { "minValue": 13000, "maxValue": 13000 },
+      "manageVariants": true,
+      "productOptions": [
+        { "optionType": "drop_down", "name": "Maceta", "choices": [{ "value": "Plástica de vivero", "inStock": true, "visible": true }] },
+        { "optionType": "drop_down", "name": "Tamaño", "choices": [{ "value": "Entre 30 y 40 cm.", "inStock": true, "visible": true }] }
+      ],
+      "variants": [
+        { "id": "d5fa00af-b7bb-4f12-a74f-b8a3ef7eb3f8", "choices": { "Maceta": "Plástica de vivero", "Tamaño": "Entre 30 y 40 cm." },
+          "variant": { "priceData": { "currency": "ARS", "price": 13000, "discountedPrice": 13000 }, "sku": "PAS-CAE-N14", "visible": true },
+          "stock": { "trackQuantity": true, "quantity": 2, "inStock": true } }
+      ],
+      "media": { "items": [{ "mediaType": "image", "id": "9377b6_414ffdbb69de414399f75e33e52ff9c4~mv2.jpg",
+        "image": { "url": "https://static.wixstatic.com/media/9377b6_414ffdbb69de414399f75e33e52ff9c4~mv2.jpg/v1/fit/w_6000,h_4000,q_90/file.jpg", "width": 6000, "height": 4000 } }] },
+      "productPageUrl": { "base": "https://www.germinandonativas.com/", "path": "/product-page/mburucuyá-passiflora-caerulea" },
+      "collectionIds": ["787c59ec-fb9b-8c59-a5b8-0f5e6c7cc359", "e73855de-a2f6-96c5-875c-7ae113d296b6", "b822a1a5-06f0-1d1c-8cef-07146670d6a6", "a0466635-c4ec-53d1-ed64-c497668286cd", "86f49bd2-b1f3-46a6-5e91-ad6a400c9d8f", "41a3737a-8093-77d6-3d35-8adeb7265c42", "8235b92f-90eb-8225-7ca3-e6eafdbbcb14", "00000000-000000-000000-000000000001"],
+      "lastUpdated": "2026-08-27T19:18:44.643Z"
+    },
+    {
+      "id": "ee1c38b4-f4fa-2bb1-c26e-3d955b84f945",
+      "name": "Arvejilla (Lathyrus pubescens)",
+      "slug": "arvejilla-lathyrus-pubescens",
+      "visible": true, "productType": "physical", "brand": "Germinando Nativas",
+      "description": "<p>☀️ Sol: pleno</p><p>💧 Riego: bajo</p><p>📏 Tamaño: trepa entre 1 y 2 metros</p><p>🌸 Época de floración: primavera</p>",
+      "additionalInfoSections": [
+        { "title": "🦋 Beneficios y usos en el paisaje", "description": "<p>La <strong>Arvejilla</strong> es la arveja silvestre del pastizal. En primavera se llena de <strong>flores lilas con forma de mariposa</strong>, típicas de las leguminosas, sobre una trepadora muy ramificada.</p>" },
+        { "title": "📦 ¿Qué recibís con tu compra?", "description": "<p>Vas a recibir una planta viva, sana y bien enraizada.</p>" }
+      ],
+      "stock": { "trackInventory": true, "quantity": 20, "inStock": true, "inventoryStatus": "IN_STOCK" },
+      "price": { "currency": "ARS", "price": 13000, "discountedPrice": 13000 },
+      "priceRange": { "minValue": 13000, "maxValue": 13000 },
+      "manageVariants": true,
+      "productOptions": [
+        { "optionType": "drop_down", "name": "Maceta", "choices": [{ "value": "Plástica de vivero", "inStock": true, "visible": true }] },
+        { "optionType": "drop_down", "name": "Tamaño", "choices": [{ "value": "Entre 30 y 40 cm.", "inStock": true, "visible": true }] }
+      ],
+      "variants": [
+        { "id": "7d5b8ebc-ad1d-4968-98b5-f3ded05fe93b", "choices": { "Maceta": "Plástica de vivero", "Tamaño": "Entre 30 y 40 cm." },
+          "variant": { "priceData": { "currency": "ARS", "price": 13000, "discountedPrice": 13000 }, "sku": "LAT-PUB-N14", "visible": true },
+          "stock": { "trackQuantity": true, "quantity": 20, "inStock": true } }
+      ],
+      "media": { "items": [{ "mediaType": "image", "id": "9377b6_73ed947fab204e2fa87d90076f42820b~mv2.jpeg",
+        "image": { "url": "https://static.wixstatic.com/media/9377b6_73ed947fab204e2fa87d90076f42820b~mv2.jpeg/v1/fit/w_1024,h_678,q_90/file.jpg", "width": 1024, "height": 678 } }] },
+      "productPageUrl": { "base": "https://www.germinandonativas.com/", "path": "/product-page/arvejilla-lathyrus-pubescens" },
+      "collectionIds": ["86f49bd2-b1f3-46a6-5e91-ad6a400c9d8f", "e73855de-a2f6-96c5-875c-7ae113d296b6", "787c59ec-fb9b-8c59-a5b8-0f5e6c7cc359", "8235b92f-90eb-8225-7ca3-e6eafdbbcb14", "00000000-000000-000000-000000000001"],
+      "lastUpdated": "2026-08-27T19:18:24.335Z"
+    },
+    {
+      "id": "ac7ba1fc-1843-11d0-0747-de9f7cbcbcc8",
+      "name": "Cola de venado (Schizachyrium condensatum)",
+      "slug": "cola-de-venado-schizachyrium-condensatum",
+      "visible": true, "productType": "physical", "brand": "Germinando Nativas",
+      "description": "<p>☀️ Sol: pleno</p><p>💧 Riego: medio</p><p>📏 Tamaño: alcanza entre 50 cm y 1,3 metros</p><p>🌸 Época de floración: verano y otoño</p>",
+      "additionalInfoSections": [
+        { "title": "🦋 Beneficios y usos en el paisaje", "description": "<p>La <strong>Cola de venado</strong> es una gramínea de pastizal que en otoño <strong>vira a tonos cobrizos y dorados</strong> y conserva las hojas viejas erguidas, de modo que el volumen se mantiene todo el invierno.</p>" },
+        { "title": "📦 ¿Qué recibís con tu compra?", "description": "<p>Vas a recibir una planta viva, sana y bien enraizada.</p>" }
+      ],
+      "stock": { "trackInventory": true, "quantity": 25, "inStock": true, "inventoryStatus": "PARTIALLY_OUT_OF_STOCK" },
+      "price": { "currency": "ARS", "price": 6500, "discountedPrice": 6500 },
+      "priceRange": { "minValue": 6500, "maxValue": 11000 },
+      "manageVariants": true,
+      "productOptions": [
+        { "optionType": "drop_down", "name": "Maceta", "choices": [{ "value": "Plástica de vivero", "inStock": true, "visible": true }] },
+        { "optionType": "drop_down", "name": "Tamaño", "choices": [
+          { "value": "Entre 10 y 15 cm.", "inStock": true, "visible": true },
+          { "value": "Entre 40 y 60 cm.", "inStock": false, "visible": true }] }
+      ],
+      "variants": [
+        { "id": "6c888d65-7990-4429-8709-7e21ad66ed90", "choices": { "Maceta": "Plástica de vivero", "Tamaño": "Entre 10 y 15 cm." },
+          "variant": { "priceData": { "currency": "ARS", "price": 6500, "discountedPrice": 6500 }, "sku": "SCH-CON-N12", "visible": true },
+          "stock": { "trackQuantity": true, "quantity": 25, "inStock": true } },
+        { "id": "a7b50c07-e35b-4dca-a31c-d3c547f4e564", "choices": { "Maceta": "Plástica de vivero", "Tamaño": "Entre 40 y 60 cm." },
+          "variant": { "priceData": { "currency": "ARS", "price": 11000, "discountedPrice": 11000 }, "sku": "SCH-CON-4L", "visible": true },
+          "stock": { "trackQuantity": true, "quantity": 0, "inStock": false } }
+      ],
+      "media": { "items": [{ "mediaType": "image", "id": "9377b6_511c73b9f16747949c79d3f892b5564d~mv2.jpg",
+        "image": { "url": "https://static.wixstatic.com/media/9377b6_511c73b9f16747949c79d3f892b5564d~mv2.jpg/v1/fit/w_597,h_601,q_90/file.jpg", "width": 597, "height": 601 } }] },
+      "productPageUrl": { "base": "https://www.germinandonativas.com/", "path": "/product-page/cola-de-venado-schizachyrium-condensatum" },
+      "collectionIds": ["787c59ec-fb9b-8c59-a5b8-0f5e6c7cc359", "e73855de-a2f6-96c5-875c-7ae113d296b6", "1196e946-d449-c21c-b95e-0ab99dcbd5e5", "0de2f9ad-10f0-6b42-327e-21d5f22e5f33", "0c8fc228-3621-b161-885e-011a43f49781", "0b08511f-e00e-e438-ffcd-455138235dff", "00000000-000000-000000-000000000001"],
+      "lastUpdated": "2026-08-27T19:46:43.212Z"
+    },
+    {
+      "id": "176a4931-76eb-a7c1-5b5d-4ddfe7039c85",
+      "name": "Espinillo (Vachellia caven)",
+      "slug": "espinillo-vachellia-caven",
+      "visible": true, "productType": "physical", "brand": "Germinando Nativas",
+      "description": "<p>☀️ Sol: pleno</p><p>💧 Riego: bajo</p><p>📏 Tamaño: alcanza entre 4 y 8 metros</p><p>🌸 Época de floración: invierno</p>",
+      "additionalInfoSections": [
+        { "title": "🦋 Beneficios y usos en el paisaje", "description": "<p>El <strong>Espinillo</strong> abre sus pompones amarillos <strong>en pleno invierno</strong>, cuando casi ninguna otra especie lo hace, y con un perfume intenso que se siente a metros.</p>" },
+        { "title": "📦 ¿Qué recibís con tu compra?", "description": "<p>Vas a recibir una planta viva, sana y bien enraizada.</p>" }
+      ],
+      "stock": { "trackInventory": true, "quantity": 1, "inStock": true, "inventoryStatus": "PARTIALLY_OUT_OF_STOCK" },
+      "price": { "currency": "ARS", "price": 24000, "discountedPrice": 24000 },
+      "priceRange": { "minValue": 24000, "maxValue": 46000 },
+      "manageVariants": true,
+      "productOptions": [
+        { "optionType": "drop_down", "name": "Maceta", "choices": [{ "value": "Plástica de vivero", "inStock": true, "visible": true }] },
+        { "optionType": "drop_down", "name": "Tamaño", "choices": [
+          { "value": "Entre 60 y 80 cm.", "inStock": false, "visible": true },
+          { "value": "Entre 100 y 130 cm.", "inStock": true, "visible": true }] }
+      ],
+      "variants": [
+        { "id": "2d9b8a51-d1b9-4e37-bc2d-f1967d41c167", "choices": { "Maceta": "Plástica de vivero", "Tamaño": "Entre 60 y 80 cm." },
+          "variant": { "priceData": { "currency": "ARS", "price": 24000, "discountedPrice": 24000 }, "sku": "VAC-CAV-4L", "visible": true },
+          "stock": { "trackQuantity": true, "quantity": 0, "inStock": false } },
+        { "id": "d2265bbd-a94c-40b0-89c4-82cf63828756", "choices": { "Maceta": "Plástica de vivero", "Tamaño": "Entre 100 y 130 cm." },
+          "variant": { "priceData": { "currency": "ARS", "price": 46000, "discountedPrice": 46000 }, "sku": "VAC-CAV-10L", "visible": true },
+          "stock": { "trackQuantity": true, "quantity": 1, "inStock": true } }
+      ],
+      "media": { "items": [{ "mediaType": "image", "id": "9377b6_9bb9bf35666b4ea9a05946ec890498a8~mv2.jpg",
+        "image": { "url": "https://static.wixstatic.com/media/9377b6_9bb9bf35666b4ea9a05946ec890498a8~mv2.jpg/v1/fit/w_1687,h_3000,q_90/file.jpg", "width": 1687, "height": 3000 } }] },
+      "productPageUrl": { "base": "https://www.germinandonativas.com/", "path": "/product-page/espinillo-vachellia-caven" },
+      "collectionIds": ["787c59ec-fb9b-8c59-a5b8-0f5e6c7cc359", "e73855de-a2f6-96c5-875c-7ae113d296b6", "05776fc0-796a-7306-2480-2a29376a63d3", "a0466635-c4ec-53d1-ed64-c497668286cd", "0596dce9-96b6-b8e6-a095-5b01a4083da5", "538823dc-017a-d8ff-516c-134f16251497", "059eb0da-3842-4a5d-83fd-62e59bee86db", "00000000-000000-000000-000000000001"],
+      "lastUpdated": "2026-08-27T19:18:24.335Z"
+    },
+    {
+      "id": "d391ada6-7282-1e8b-f6b6-266d90a15e45",
+      "name": "Maceta Blum \"Cilindro\" Terracota",
+      "slug": "maceta-blum-cilindro",
+      "visible": true, "productType": "physical",
+      "description": "<p>🏺 Material: terracota natural</p><p>📏 Medidas: del Nº12 al Nº30 — el número es el tamaño de la boca en centímetros</p><p>🌦️ Dónde va: exterior o interior. Resiste sol, lluvia y heladas.</p>",
+      "additionalInfoSections": [
+        { "title": "📐 Ficha técnica", "description": "<p>Material: <strong>terracota natural</strong>. El número de cada medida es el tamaño de la boca en centímetros.</p>" },
+        { "title": "🎨 Para qué sirve y dónde queda bien", "description": "<p>Paredes rectas de arriba a abajo: la boca y la base miden casi lo mismo. Eso le da una silueta limpia, más de estudio que de vivero.</p>" }
+      ],
+      "stock": { "trackInventory": true, "quantity": 20, "inStock": true, "inventoryStatus": "PARTIALLY_OUT_OF_STOCK" },
+      "price": { "currency": "ARS", "price": 3600, "discountedPrice": 3600 },
+      "priceRange": { "minValue": 3600, "maxValue": 30000 },
+      "manageVariants": true,
+      "productOptions": [
+        { "optionType": "drop_down", "name": "Número", "choices": [
+          { "value": "12", "inStock": true, "visible": true },
+          { "value": "14", "inStock": false, "visible": true },
+          { "value": "18", "inStock": false, "visible": true },
+          { "value": "22", "inStock": false, "visible": true },
+          { "value": "26", "inStock": false, "visible": true },
+          { "value": "30", "inStock": false, "visible": true }] }
+      ],
+      "variants": [
+        { "id": "2a07e7d1-aae0-44de-ad7f-57e68c433aa8", "choices": { "Número": "12" }, "variant": { "priceData": { "currency": "ARS", "price": 3600, "discountedPrice": 3600 }, "sku": "MB-CILTERRA-12", "visible": true }, "stock": { "trackQuantity": true, "quantity": 20, "inStock": true } },
+        { "id": "9a849246-f402-4417-b622-fd3176296018", "choices": { "Número": "14" }, "variant": { "priceData": { "currency": "ARS", "price": 8000, "discountedPrice": 8000 }, "sku": "MB-CILTERRA-14", "visible": true }, "stock": { "trackQuantity": true, "quantity": 0, "inStock": false } },
+        { "id": "833a2fda-5852-4992-9846-c93406b4b78f", "choices": { "Número": "18" }, "variant": { "priceData": { "currency": "ARS", "price": 13000, "discountedPrice": 13000 }, "sku": "MB-CILTERRA-18", "visible": true }, "stock": { "trackQuantity": true, "quantity": 0, "inStock": false } },
+        { "id": "cb25a854-97c6-49e1-b8a3-19c07ce66cf9", "choices": { "Número": "22" }, "variant": { "priceData": { "currency": "ARS", "price": 17000, "discountedPrice": 17000 }, "sku": "MB-CILTERRA-22", "visible": true }, "stock": { "trackQuantity": true, "quantity": 0, "inStock": false } },
+        { "id": "820a7861-530e-4b2e-85af-86740ec7fa06", "choices": { "Número": "26" }, "variant": { "priceData": { "currency": "ARS", "price": 22000, "discountedPrice": 22000 }, "sku": "MB-CILTERRA-26", "visible": true }, "stock": { "trackQuantity": true, "quantity": 0, "inStock": false } },
+        { "id": "28415832-93ca-4a6c-adfe-220626d0e2d8", "choices": { "Número": "30" }, "variant": { "priceData": { "currency": "ARS", "price": 30000, "discountedPrice": 30000 }, "sku": "MB-CILTERRA-30", "visible": true }, "stock": { "trackQuantity": true, "quantity": 0, "inStock": false } }
+      ],
+      "media": { "items": [{ "mediaType": "image", "id": "9377b6_36acd8f643c74e0b85a9e313ba91c598~mv2.jpg",
+        "image": { "url": "https://static.wixstatic.com/media/9377b6_36acd8f643c74e0b85a9e313ba91c598~mv2.jpg/v1/fit/w_229,h_253,q_90/file.jpg", "width": 229, "height": 253 } }] },
+      "productPageUrl": { "base": "https://www.germinandonativas.com/", "path": "/product-page/maceta-blum-cilindro" },
+      "collectionIds": ["da1f4d1f-d3ae-1df0-89c9-e701e30c3297", "e73855de-a2f6-96c5-875c-7ae113d296b6", "00000000-000000-000000-000000000001"],
+      "lastUpdated": "2026-08-27T19:18:24.335Z"
+    },
+    {
+      "id": "823c9497-1d17-f831-4cf2-97445642f239",
+      "name": "Bio-neem GlacoXan 100% orgánico",
+      "slug": "bio-neem-glacoxan-100-orgánico",
+      "visible": true, "productType": "physical",
+      "description": "<p>🌿 Qué es: insecticida y repelente orgánico de aceite de neem</p><p>🧪 Principio activo: azadiractina, de semilla de neem</p><p>📦 Presentación: 20 ml concentrado</p>",
+      "additionalInfoSections": [
+        { "title": "📐 Ficha técnica", "description": "<p>Extracto natural de semillas del árbol de neem (azadiractina). Es orgánico, biodegradable y seguro para la fauna benéfica. Presentación concentrada de 20 cm³.</p>" },
+        { "title": "🎨 Para qué sirve y dónde queda bien", "description": "<p>Controla mosca blanca, pulgones, trips, cochinillas y ácaros. Interrumpe el ciclo de alimentación y reproducción del insecto.</p>" }
+      ],
+      "stock": { "trackInventory": true, "quantity": 10, "inStock": true, "inventoryStatus": "IN_STOCK" },
+      "price": { "currency": "ARS", "price": 23000, "discountedPrice": 23000 },
+      "priceRange": { "minValue": 23000, "maxValue": 23000 },
+      "manageVariants": true,
+      "productOptions": [
+        { "optionType": "drop_down", "name": "Tamaño", "choices": [{ "value": "20 ml.", "inStock": true, "visible": true }] }
+      ],
+      "variants": [
+        { "id": "7cbd0815-08f7-4aba-8c3a-933aa56fa09d", "choices": { "Tamaño": "20 ml." },
+          "variant": { "priceData": { "currency": "ARS", "price": 23000, "discountedPrice": 23000 }, "sku": "INS-BIONEEM-20ML", "visible": true },
+          "stock": { "trackQuantity": true, "quantity": 10, "inStock": true } }
+      ],
+      "media": { "items": [{ "mediaType": "image", "id": "9377b6_212884e0a1674f199aed4f1218bcea50~mv2.png",
+        "image": { "url": "https://static.wixstatic.com/media/9377b6_212884e0a1674f199aed4f1218bcea50~mv2.png/v1/fit/w_2048,h_2048,q_90/file.png", "width": 2048, "height": 2048 } }] },
+      "productPageUrl": { "base": "https://www.germinandonativas.com/", "path": "/product-page/bio-neem-glacoxan-100-orgánico" },
+      "collectionIds": ["e73855de-a2f6-96c5-875c-7ae113d296b6", "056741a1-50fd-a9df-fd1d-05dfc9894197", "00000000-000000-000000-000000000001"],
+      "lastUpdated": "2026-08-27T19:18:24.335Z"
+    }
+  ]
+}

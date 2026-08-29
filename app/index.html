@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#7d8c53">
+<title>Germinando Nativas — Mostrador</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<header class="barra">
+  <button class="marca" data-ir="#/inicio">
+    <span class="hoja">🌿</span>
+    <span>Germinando Nativas</span>
+  </button>
+
+  <div class="buscador">
+    <input type="search" id="busqueda" placeholder="Buscar planta, maceta, insumo…"
+           autocomplete="off" spellcheck="false" aria-label="Buscar en el catálogo">
+  </div>
+
+  <div class="barra-estado">
+    <span class="pastilla" id="estado-catalogo" title="Antigüedad del catálogo"></span>
+    <button class="boton-pedido" data-ir="#/pedido" aria-label="Ver el pedido">
+      🧺 <span id="pedido-cuenta">0</span>
+    </button>
+  </div>
+</header>
+
+<main id="pantalla" aria-live="polite"></main>
+
+<div id="aviso" class="aviso" role="status" hidden></div>
+
+<script type="module" src="js/app.mjs"></script>
+</body>
+</html>

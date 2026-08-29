@@ -5,3 +5,7 @@ node_modules/
 # Salida del sync: se regenera con `npm run sync`
 data/catalogo.json
 data/imagenes/
+
+# Capturas y archivos sueltos de depuración
+*.png
+.dbg.mjs
